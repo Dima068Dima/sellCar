@@ -21,3 +21,10 @@ final class MainScreenCarsViewImp: UIView {
         return nil
     }
 }
+
+// MARK: - Public -
+extension MainScreenCarsViewImp {
+    func update(with cars: CarsScreen) {
+        //
+    }
+}

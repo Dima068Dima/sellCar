@@ -8,5 +8,5 @@
 import Foundation
 
 protocol MainScreenCarsView: AnyObject {
-    func update()
+    func update(with cars: CarsScreen)
 }
