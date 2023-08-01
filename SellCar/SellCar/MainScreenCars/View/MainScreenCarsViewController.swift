@@ -32,3 +32,9 @@ final class MainScreenCarsViewController: UIViewController {
        
     }
 }
+
+extension MainScreenCarsViewController: MainScreenCarsView {
+    func update() {
+        //
+    }
+}
