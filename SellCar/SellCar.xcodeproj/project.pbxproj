@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3559C4442A799CC600582A5F /* MainScreenCarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3559C4432A799CC600582A5F /* MainScreenCarsView.swift */; };
+		3559C4482A799E0C00582A5F /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3559C4472A799E0C00582A5F /* Appearance.swift */; };
+		3559C44B2A799F0100582A5F /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3559C44A2A799F0100582A5F /* Int+.swift */; };
 		35918A7D2A797DF100310D71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35918A7C2A797DF100310D71 /* AppDelegate.swift */; };
 		35918A7F2A797DF100310D71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35918A7E2A797DF100310D71 /* SceneDelegate.swift */; };
 		35918A812A797DF100310D71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35918A802A797DF100310D71 /* ViewController.swift */; };
@@ -18,6 +21,9 @@
 
 /* Begin PBXFileReference section */
 		14BBB603F0A7BB7AEA8C7A53 /* Pods_SellCar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SellCar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3559C4432A799CC600582A5F /* MainScreenCarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenCarsView.swift; sourceTree = "<group>"; };
+		3559C4472A799E0C00582A5F /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
+		3559C44A2A799F0100582A5F /* Int+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
 		35918A792A797DF100310D71 /* SellCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SellCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35918A7C2A797DF100310D71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35918A7E2A797DF100310D71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,8 +62,56 @@
 				CCF956B2F582D75EB39C2A1B /* Pods-SellCar.debug.xcconfig */,
 				C24424D46E78B18128DF8C9E /* Pods-SellCar.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		3559C4402A79973800582A5F /* MainScreenCars */ = {
+			isa = PBXGroup;
+			children = (
+				3559C4412A799B2E00582A5F /* View */,
+			);
+			path = MainScreenCars;
+			sourceTree = "<group>";
+		};
+		3559C4412A799B2E00582A5F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3559C4422A799C7A00582A5F /* Components */,
+				3559C4432A799CC600582A5F /* MainScreenCarsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3559C4422A799C7A00582A5F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3559C4452A799DDC00582A5F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3559C4492A799EE200582A5F /* Extension */,
+				3559C4462A799DEF00582A5F /* Common */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		3559C4462A799DEF00582A5F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3559C4472A799E0C00582A5F /* Appearance.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3559C4492A799EE200582A5F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3559C44A2A799F0100582A5F /* Int+.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		35918A702A797DF100310D71 = {
@@ -81,6 +135,8 @@
 		35918A7B2A797DF100310D71 /* SellCar */ = {
 			isa = PBXGroup;
 			children = (
+				3559C4452A799DDC00582A5F /* Core */,
+				3559C4402A79973800582A5F /* MainScreenCars */,
 				35918A7C2A797DF100310D71 /* AppDelegate.swift */,
 				35918A7E2A797DF100310D71 /* SceneDelegate.swift */,
 				35918A802A797DF100310D71 /* ViewController.swift */,
@@ -207,9 +263,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3559C4482A799E0C00582A5F /* Appearance.swift in Sources */,
+				3559C4442A799CC600582A5F /* MainScreenCarsView.swift in Sources */,
 				35918A812A797DF100310D71 /* ViewController.swift in Sources */,
 				35918A7D2A797DF100310D71 /* AppDelegate.swift in Sources */,
 				35918A7F2A797DF100310D71 /* SceneDelegate.swift in Sources */,
+				3559C44B2A799F0100582A5F /* Int+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
