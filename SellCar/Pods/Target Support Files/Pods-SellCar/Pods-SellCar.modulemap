@@ -1,0 +1,6 @@
+framework module Pods_SellCar {
+  umbrella header "Pods-SellCar-umbrella.h"
+
+  export *
+  module * { export * }
+}
