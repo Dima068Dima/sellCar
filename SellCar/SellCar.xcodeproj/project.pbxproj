@@ -18,6 +18,7 @@
 		3559C45A2A79AE5900582A5F /* MainScreenCarsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3559C4592A79AE5900582A5F /* MainScreenCarsCell.swift */; };
 		3559C45D2A79AEAA00582A5F /* BaseCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3559C45C2A79AEAA00582A5F /* BaseCollectionCell.swift */; };
 		3559C45F2A79B40D00582A5F /* UICollectionReusableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3559C45E2A79B40D00582A5F /* UICollectionReusableView+.swift */; };
+		3559C4612A79B87100582A5F /* MainScreenCarsDelegateAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3559C4602A79B87100582A5F /* MainScreenCarsDelegateAdapter.swift */; };
 		35918A7D2A797DF100310D71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35918A7C2A797DF100310D71 /* AppDelegate.swift */; };
 		35918A7F2A797DF100310D71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35918A7E2A797DF100310D71 /* SceneDelegate.swift */; };
 		35918A812A797DF100310D71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35918A802A797DF100310D71 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 		3559C4592A79AE5900582A5F /* MainScreenCarsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenCarsCell.swift; sourceTree = "<group>"; };
 		3559C45C2A79AEAA00582A5F /* BaseCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionCell.swift; sourceTree = "<group>"; };
 		3559C45E2A79B40D00582A5F /* UICollectionReusableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionReusableView+.swift"; sourceTree = "<group>"; };
+		3559C4602A79B87100582A5F /* MainScreenCarsDelegateAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenCarsDelegateAdapter.swift; sourceTree = "<group>"; };
 		35918A792A797DF100310D71 /* SellCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SellCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35918A7C2A797DF100310D71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35918A7E2A797DF100310D71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				3559C4562A79AD2700582A5F /* MainScreenCarsDataSourceAdapter.swift */,
+				3559C4602A79B87100582A5F /* MainScreenCarsDelegateAdapter.swift */,
 			);
 			path = Adapters;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3559C4612A79B87100582A5F /* MainScreenCarsDelegateAdapter.swift in Sources */,
 				3559C4482A799E0C00582A5F /* Appearance.swift in Sources */,
 				3559C4442A799CC600582A5F /* MainScreenCarsViewImp.swift in Sources */,
 				35918A812A797DF100310D71 /* ViewController.swift in Sources */,
