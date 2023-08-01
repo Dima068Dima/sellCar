@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 final class MainScreenCarsViewController: UIViewController {
-    private let mainView = MainScreenCarsView()
+    private let mainView = MainScreenCarsViewImp()
     private let presenter: MainScreenCarsPresenter
     
     init(presenter: MainScreenCarsPresenter) {

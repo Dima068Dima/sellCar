@@ -1,5 +1,5 @@
 //
-//  MainScreenCarsView.swift
+//  MainScreenCarsViewImp.swift
 //  SellCar
 //
 //  Created by Дмитрий Татаринцев on 01.08.2023.
@@ -8,7 +8,7 @@
 import Foundation
 import SnapKit
 
-final class MainScreenCarsView: UIView {
+final class MainScreenCarsViewImp: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)

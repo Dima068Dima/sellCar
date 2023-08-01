@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3559C4442A799CC600582A5F /* MainScreenCarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3559C4432A799CC600582A5F /* MainScreenCarsView.swift */; };
+		3559C4442A799CC600582A5F /* MainScreenCarsViewImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3559C4432A799CC600582A5F /* MainScreenCarsViewImp.swift */; };
 		3559C4482A799E0C00582A5F /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3559C4472A799E0C00582A5F /* Appearance.swift */; };
 		3559C44B2A799F0100582A5F /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3559C44A2A799F0100582A5F /* Int+.swift */; };
 		3559C44D2A79A0E800582A5F /* MainScreenCarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3559C44C2A79A0E800582A5F /* MainScreenCarsViewController.swift */; };
@@ -24,7 +24,7 @@
 
 /* Begin PBXFileReference section */
 		14BBB603F0A7BB7AEA8C7A53 /* Pods_SellCar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SellCar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3559C4432A799CC600582A5F /* MainScreenCarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenCarsView.swift; sourceTree = "<group>"; };
+		3559C4432A799CC600582A5F /* MainScreenCarsViewImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenCarsViewImp.swift; sourceTree = "<group>"; };
 		3559C4472A799E0C00582A5F /* Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
 		3559C44A2A799F0100582A5F /* Int+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
 		3559C44C2A79A0E800582A5F /* MainScreenCarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenCarsViewController.swift; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				3559C4422A799C7A00582A5F /* Components */,
-				3559C4432A799CC600582A5F /* MainScreenCarsView.swift */,
+				3559C4432A799CC600582A5F /* MainScreenCarsViewImp.swift */,
 				3559C44C2A79A0E800582A5F /* MainScreenCarsViewController.swift */,
 			);
 			path = View;
@@ -281,7 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3559C4482A799E0C00582A5F /* Appearance.swift in Sources */,
-				3559C4442A799CC600582A5F /* MainScreenCarsView.swift in Sources */,
+				3559C4442A799CC600582A5F /* MainScreenCarsViewImp.swift in Sources */,
 				35918A812A797DF100310D71 /* ViewController.swift in Sources */,
 				3559C44D2A79A0E800582A5F /* MainScreenCarsViewController.swift in Sources */,
 				35918A7D2A797DF100310D71 /* AppDelegate.swift in Sources */,
