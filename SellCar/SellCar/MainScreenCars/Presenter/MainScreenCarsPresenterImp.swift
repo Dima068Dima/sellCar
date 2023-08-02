@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 final class MainScreenCarsPresenterImp: MainScreenCarsPresenter {
     private weak var view: MainScreenCarsView?
     private let mainScreenNetworkAPI = MainScreenNetworkAPI()
@@ -48,6 +47,7 @@ struct Cars: Decodable {
     let brandName: String
     let modelName: String
     let engineName: String
+    let name: String
     let year: Int
     let price: Int?
     let image: String
@@ -58,8 +58,7 @@ struct Cars: Decodable {
            case brandName = "brand_name"
            case modelName = "model_name"
            case engineName = "engine_name"
-           case year, price
-           case image
+           case year, price, name, image
        }
 }
 

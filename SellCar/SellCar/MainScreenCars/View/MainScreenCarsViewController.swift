@@ -30,7 +30,7 @@ final class MainScreenCarsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        mainView.backgroundColor = .green
+        mainView.backgroundColor = .white
         presenter.loadCars()
     }
     

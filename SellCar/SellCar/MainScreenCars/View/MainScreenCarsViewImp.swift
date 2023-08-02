@@ -36,7 +36,7 @@ final class MainScreenCarsViewImp: UIView {
             
             let itemSize = NSCollectionLayoutSize(
                 widthDimension: .fractionalWidth(1.0),
-                heightDimension: .absolute(121.scaleIfNeeded()))
+                heightDimension: .absolute(320.scaleIfNeeded()))
             let item = NSCollectionLayoutItem(layoutSize: itemSize)
             
             let groupSize = NSCollectionLayoutSize(
@@ -47,10 +47,12 @@ final class MainScreenCarsViewImp: UIView {
             let section = NSCollectionLayoutSection(group: group)
             section.interGroupSpacing = 16.scaleIfNeeded()
 
-            section.contentInsets = .init(top: 16.scaleIfNeeded(),
-                                          leading: 24.scaleIfNeeded(),
-                                          bottom: .zero,
-                                          trailing: 24.scaleIfNeeded())
+            section.contentInsets = .init(
+                top: 16.scaleIfNeeded(),
+                leading: 24.scaleIfNeeded(),
+                bottom: .zero,
+                trailing: 24.scaleIfNeeded()
+            )
             return section
         }
         
@@ -58,7 +60,6 @@ final class MainScreenCarsViewImp: UIView {
     }
     
     private func setupUI() {
-        backgroundColor = .gray
         setupCollectionView()
     }
 
@@ -68,7 +69,6 @@ final class MainScreenCarsViewImp: UIView {
                                 forCellWithReuseIdentifier: MainScreenCarsCell.identifier)
         collectionView.showsVerticalScrollIndicator = false
         collectionView.showsHorizontalScrollIndicator = false
-        collectionView.backgroundColor = .red
 
         addSubview(collectionView)
         collectionView.snp.makeConstraints {
