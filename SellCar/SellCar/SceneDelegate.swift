@@ -15,7 +15,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let newWindow = UIWindow(windowScene: windowScene)
-        newWindow.rootViewController = UINavigationController(rootViewController: MainScreenCarsViewController(presenter: MainScreenCarsPresenterImp()))
+        let presenter = MainScreenCarsPresenterImp()
+        let viewController = MainScreenCarsViewController(presenter: presenter)
+        presenter.setView(view: viewController)
+        newWindow.rootViewController = UINavigationController(rootViewController: viewController)
         self.window = newWindow
 
         newWindow.makeKeyAndVisible()

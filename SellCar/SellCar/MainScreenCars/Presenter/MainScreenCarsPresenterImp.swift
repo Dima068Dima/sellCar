@@ -11,7 +11,7 @@ import Foundation
 final class MainScreenCarsPresenterImp: MainScreenCarsPresenter {
     private weak var view: MainScreenCarsView?
     private let mainScreenNetworkAPI = MainScreenNetworkAPI()
-        
+    
     func loadCars() {
         Task {
             do {
@@ -23,6 +23,10 @@ final class MainScreenCarsPresenterImp: MainScreenCarsPresenter {
                 
             }
         }
+    }
+    
+    func setView(view: MainScreenCarsView) {
+        self.view = view
     }
     
     func cellDidTap(with eventId: String) {
