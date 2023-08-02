@@ -8,8 +8,27 @@
 import Foundation
 
 
-final class MainScreenCarsPresenterImp {
+final class MainScreenCarsPresenterImp: MainScreenCarsPresenter {
+    
     private weak var view: MainScreenCarsView?
+    private let mainScreenNetworkAPI = MainScreenNetworkAPI()
+    
+    func loadCars() {
+        Task {
+            do {
+               let carsResponse = try await mainScreenNetworkAPI.getCars()
+                await MainActor.run {
+                    view?.update(with: carsResponse)
+                }
+            } catch {
+                
+            }
+        }
+    }
+    
+    func cellDidTap(with eventId: String) {
+        //
+    }
 }
 
 // MARK: - View Model -
