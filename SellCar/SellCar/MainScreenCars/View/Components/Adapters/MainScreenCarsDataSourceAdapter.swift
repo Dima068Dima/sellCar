@@ -25,20 +25,20 @@ final class MainScreenCarsDataSourceAdapter: NSObject {
         snapshot.deleteAllItems()
         snapshot.appendSections([Section.main])
         snapshot.appendItems(newsPost, toSection: Section.main)
-        dataSource?.apply(snapshot, animatingDifferences: false)
+        dataSource?.apply(snapshot, animatingDifferences: true)
     }
 
     private func createDataSource() -> MainScreenCarsDataSource {
         let dataSource = MainScreenCarsDataSource(
             collectionView: collectionView,
-            cellProvider: { collectionView, indexPath, car in
+            cellProvider: { collectionView, indexPath, data in
                 guard let cell = collectionView.dequeueReusableCell(
                     withReuseIdentifier: MainScreenCarsCell.identifier,
                     for: indexPath) as? MainScreenCarsCell else {
                     assertionFailure()
                     return UICollectionViewCell()
                 }
-                cell.update(with: car)
+                cell.update(with: data)
                 cell.layer.cornerRadius = 8
                 return cell
             })

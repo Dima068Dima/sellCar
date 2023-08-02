@@ -17,8 +17,8 @@ final class MainScreenCarsCell: BaseCollectionCell {
     
     override func setupUI() {
         contentView.layer.cornerRadius = 8
-        setupTitleLabel()
         setupSubtitleLabel()
+        setupTitleLabel()
         setupImageView()
     }
     

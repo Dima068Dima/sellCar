@@ -17,6 +17,7 @@ final class MainScreenCarsViewImp: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        setupUI()
         dataSource = MainScreenCarsDataSourceAdapter(collectionView)
     }
     
@@ -45,14 +46,6 @@ final class MainScreenCarsViewImp: UIView {
             
             let section = NSCollectionLayoutSection(group: group)
             section.interGroupSpacing = 16.scaleIfNeeded()
-            
-            let headerFooterSize = NSCollectionLayoutSize(
-                widthDimension: .fractionalWidth(1.0),
-                heightDimension: .estimated(.pi))
-            let sectionHeader = NSCollectionLayoutBoundarySupplementaryItem(
-                layoutSize: headerFooterSize,
-                elementKind: UICollectionView.elementKindSectionHeader, alignment: .top)
-            section.boundarySupplementaryItems = [sectionHeader]
 
             section.contentInsets = .init(top: 16.scaleIfNeeded(),
                                           leading: 24.scaleIfNeeded(),
@@ -75,7 +68,7 @@ final class MainScreenCarsViewImp: UIView {
                                 forCellWithReuseIdentifier: MainScreenCarsCell.identifier)
         collectionView.showsVerticalScrollIndicator = false
         collectionView.showsHorizontalScrollIndicator = false
-        collectionView.backgroundColor = .clear
+        collectionView.backgroundColor = .red
 
         addSubview(collectionView)
         collectionView.snp.makeConstraints {
