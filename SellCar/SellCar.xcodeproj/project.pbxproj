@@ -25,6 +25,7 @@
 		35918A812A797DF100310D71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35918A802A797DF100310D71 /* ViewController.swift */; };
 		35918A862A797DF200310D71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35918A852A797DF200310D71 /* Assets.xcassets */; };
 		35918A892A797DF200310D71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35918A872A797DF200310D71 /* LaunchScreen.storyboard */; };
+		35B7F3612A7A8B430034E449 /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B7F3602A7A8B430034E449 /* UIImageView+.swift */; };
 		94FB71139A69D36C5068C023 /* Pods_SellCar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14BBB603F0A7BB7AEA8C7A53 /* Pods_SellCar.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		35918A852A797DF200310D71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35918A882A797DF200310D71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35918A8A2A797DF200310D71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35B7F3602A7A8B430034E449 /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
 		C24424D46E78B18128DF8C9E /* Pods-SellCar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SellCar.release.xcconfig"; path = "Target Support Files/Pods-SellCar/Pods-SellCar.release.xcconfig"; sourceTree = "<group>"; };
 		CCF956B2F582D75EB39C2A1B /* Pods-SellCar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SellCar.debug.xcconfig"; path = "Target Support Files/Pods-SellCar/Pods-SellCar.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +138,7 @@
 			children = (
 				3559C44A2A799F0100582A5F /* Int+.swift */,
 				3559C45E2A79B40D00582A5F /* UICollectionReusableView+.swift */,
+				35B7F3602A7A8B430034E449 /* UIImageView+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				35918A812A797DF100310D71 /* ViewController.swift in Sources */,
 				3559C44D2A79A0E800582A5F /* MainScreenCarsViewController.swift in Sources */,
 				3559C4542A79A59500582A5F /* MainScreenCarsView.swift in Sources */,
+				35B7F3612A7A8B430034E449 /* UIImageView+.swift in Sources */,
 				3559C45F2A79B40D00582A5F /* UICollectionReusableView+.swift in Sources */,
 				35918A7D2A797DF100310D71 /* AppDelegate.swift in Sources */,
 				35918A7F2A797DF100310D71 /* SceneDelegate.swift in Sources */,
