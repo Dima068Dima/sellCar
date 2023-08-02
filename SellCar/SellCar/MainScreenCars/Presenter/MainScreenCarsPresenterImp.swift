@@ -9,16 +9,16 @@ import Foundation
 
 
 final class MainScreenCarsPresenterImp {
-    
+    private weak var view: MainScreenCarsView?
 }
 
 // MARK: - View Model -
 
-struct CarsScreen {
+struct CarsScreen: Decodable {
     let cars: [Cars]
 }
 
-struct Cars {
+struct Cars: Decodable {
     let uuid = UUID()
     
     let id: Int

@@ -19,6 +19,7 @@
 		3559C45D2A79AEAA00582A5F /* BaseCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3559C45C2A79AEAA00582A5F /* BaseCollectionCell.swift */; };
 		3559C45F2A79B40D00582A5F /* UICollectionReusableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3559C45E2A79B40D00582A5F /* UICollectionReusableView+.swift */; };
 		3559C4612A79B87100582A5F /* MainScreenCarsDelegateAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3559C4602A79B87100582A5F /* MainScreenCarsDelegateAdapter.swift */; };
+		3559C4642A7A390200582A5F /* MainScreenNetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3559C4632A7A390200582A5F /* MainScreenNetworkAPI.swift */; };
 		35918A7D2A797DF100310D71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35918A7C2A797DF100310D71 /* AppDelegate.swift */; };
 		35918A7F2A797DF100310D71 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35918A7E2A797DF100310D71 /* SceneDelegate.swift */; };
 		35918A812A797DF100310D71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35918A802A797DF100310D71 /* ViewController.swift */; };
@@ -42,6 +43,7 @@
 		3559C45C2A79AEAA00582A5F /* BaseCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionCell.swift; sourceTree = "<group>"; };
 		3559C45E2A79B40D00582A5F /* UICollectionReusableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionReusableView+.swift"; sourceTree = "<group>"; };
 		3559C4602A79B87100582A5F /* MainScreenCarsDelegateAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenCarsDelegateAdapter.swift; sourceTree = "<group>"; };
+		3559C4632A7A390200582A5F /* MainScreenNetworkAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenNetworkAPI.swift; sourceTree = "<group>"; };
 		35918A792A797DF100310D71 /* SellCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SellCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35918A7C2A797DF100310D71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35918A7E2A797DF100310D71 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 		3559C4402A79973800582A5F /* MainScreenCars */ = {
 			isa = PBXGroup;
 			children = (
+				3559C4622A7A38C700582A5F /* NetworkServices */,
 				3559C44E2A79A1CE00582A5F /* Presenter */,
 				3559C4412A799B2E00582A5F /* View */,
 			);
@@ -171,6 +174,14 @@
 				3559C45C2A79AEAA00582A5F /* BaseCollectionCell.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3559C4622A7A38C700582A5F /* NetworkServices */ = {
+			isa = PBXGroup;
+			children = (
+				3559C4632A7A390200582A5F /* MainScreenNetworkAPI.swift */,
+			);
+			path = NetworkServices;
 			sourceTree = "<group>";
 		};
 		35918A702A797DF100310D71 = {
@@ -336,6 +347,7 @@
 				3559C45A2A79AE5900582A5F /* MainScreenCarsCell.swift in Sources */,
 				3559C45D2A79AEAA00582A5F /* BaseCollectionCell.swift in Sources */,
 				3559C44B2A799F0100582A5F /* Int+.swift in Sources */,
+				3559C4642A7A390200582A5F /* MainScreenNetworkAPI.swift in Sources */,
 				3559C4522A79A26800582A5F /* MainScreenCarsPresenterImp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
