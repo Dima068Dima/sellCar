@@ -26,6 +26,9 @@
 		35918A862A797DF200310D71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35918A852A797DF200310D71 /* Assets.xcassets */; };
 		35918A892A797DF200310D71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35918A872A797DF200310D71 /* LaunchScreen.storyboard */; };
 		35B7F3612A7A8B430034E449 /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B7F3602A7A8B430034E449 /* UIImageView+.swift */; };
+		35B7F3632A7AFC080034E449 /* MainScreenCarsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B7F3622A7AFC080034E449 /* MainScreenCarsRouter.swift */; };
+		35B7F3662A7AFC600034E449 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B7F3652A7AFC600034E449 /* Router.swift */; };
+		35B7F3682A7AFCAB0034E449 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B7F3672A7AFCAB0034E449 /* Routable.swift */; };
 		94FB71139A69D36C5068C023 /* Pods_SellCar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14BBB603F0A7BB7AEA8C7A53 /* Pods_SellCar.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +55,9 @@
 		35918A882A797DF200310D71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35918A8A2A797DF200310D71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35B7F3602A7A8B430034E449 /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
+		35B7F3622A7AFC080034E449 /* MainScreenCarsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenCarsRouter.swift; sourceTree = "<group>"; };
+		35B7F3652A7AFC600034E449 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		35B7F3672A7AFCAB0034E449 /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
 		C24424D46E78B18128DF8C9E /* Pods-SellCar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SellCar.release.xcconfig"; path = "Target Support Files/Pods-SellCar/Pods-SellCar.release.xcconfig"; sourceTree = "<group>"; };
 		CCF956B2F582D75EB39C2A1B /* Pods-SellCar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SellCar.debug.xcconfig"; path = "Target Support Files/Pods-SellCar/Pods-SellCar.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +97,7 @@
 				3559C4622A7A38C700582A5F /* NetworkServices */,
 				3559C44E2A79A1CE00582A5F /* Presenter */,
 				3559C4412A799B2E00582A5F /* View */,
+				35B7F3622A7AFC080034E449 /* MainScreenCarsRouter.swift */,
 			);
 			path = MainScreenCars;
 			sourceTree = "<group>";
@@ -172,6 +179,7 @@
 		3559C45B2A79AE9A00582A5F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				35B7F3642A7AFC3D0034E449 /* Router */,
 				3559C45C2A79AEAA00582A5F /* BaseCollectionCell.swift */,
 			);
 			path = Helpers;
@@ -216,6 +224,15 @@
 				35918A8A2A797DF200310D71 /* Info.plist */,
 			);
 			path = SellCar;
+			sourceTree = "<group>";
+		};
+		35B7F3642A7AFC3D0034E449 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				35B7F3652A7AFC600034E449 /* Router.swift */,
+				35B7F3672A7AFCAB0034E449 /* Routable.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,11 +349,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35B7F3632A7AFC080034E449 /* MainScreenCarsRouter.swift in Sources */,
 				3559C4612A79B87100582A5F /* MainScreenCarsDelegateAdapter.swift in Sources */,
 				3559C4482A799E0C00582A5F /* Appearance.swift in Sources */,
 				3559C4442A799CC600582A5F /* MainScreenCarsViewImp.swift in Sources */,
 				35918A812A797DF100310D71 /* ViewController.swift in Sources */,
 				3559C44D2A79A0E800582A5F /* MainScreenCarsViewController.swift in Sources */,
+				35B7F3662A7AFC600034E449 /* Router.swift in Sources */,
 				3559C4542A79A59500582A5F /* MainScreenCarsView.swift in Sources */,
 				35B7F3612A7A8B430034E449 /* UIImageView+.swift in Sources */,
 				3559C45F2A79B40D00582A5F /* UICollectionReusableView+.swift in Sources */,
@@ -349,6 +368,7 @@
 				3559C44B2A799F0100582A5F /* Int+.swift in Sources */,
 				3559C4642A7A390200582A5F /* MainScreenNetworkAPI.swift in Sources */,
 				3559C4522A79A26800582A5F /* MainScreenCarsPresenterImp.swift in Sources */,
+				35B7F3682A7AFCAB0034E449 /* Routable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
