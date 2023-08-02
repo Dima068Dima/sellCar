@@ -28,6 +28,12 @@ final class MainScreenCarsViewController: UIViewController {
         view = mainView
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        mainView.backgroundColor = .green
+        presenter.loadCars()
+    }
+    
     private func setupActions() {
        
     }

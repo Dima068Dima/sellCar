@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol MainScreenCarsPresenter {
+protocol MainScreenCarsPresenter: AnyObject {
     func loadCars()
     func cellDidTap(with eventId: String)
 }

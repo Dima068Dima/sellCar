@@ -9,10 +9,9 @@ import Foundation
 
 
 final class MainScreenCarsPresenterImp: MainScreenCarsPresenter {
-    
     private weak var view: MainScreenCarsView?
     private let mainScreenNetworkAPI = MainScreenNetworkAPI()
-    
+        
     func loadCars() {
         Task {
             do {
