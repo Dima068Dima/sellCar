@@ -13,7 +13,7 @@ final class MainScreenNetworkAPI {
         name: "Authorization",
         value: "Bearer 787071117870711178707111307b63465677870787071111c6df96e084d083a36e52fc5")
     
-    func getCars() async throws -> CarsScreen {
+    func getCars() async throws -> [Cars] {
         let url = "http://am111.05.testing.place/api/v1/cars/list"
         
         return try await AF.request(
@@ -22,7 +22,7 @@ final class MainScreenNetworkAPI {
             headers: [header]
         )
         .validate(statusCode: [200])
-        .serializingDecodable(CarsScreen.self)
+        .serializingDecodable([Cars].self)
         .value
     }
 }

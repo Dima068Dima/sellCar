@@ -88,7 +88,7 @@ final class MainScreenCarsViewImp: UIView {
 
 // MARK: - Public -
 extension MainScreenCarsViewImp {
-    func update(with cars: CarsScreen) {
-        dataSource?.update(with: cars.cars)
+    func update(with cars: [Cars]) {
+        dataSource?.update(with: cars)
     }
 }

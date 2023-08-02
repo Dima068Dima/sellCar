@@ -34,7 +34,7 @@ final class MainScreenCarsViewController: UIViewController {
 }
 
 extension MainScreenCarsViewController: MainScreenCarsView {
-    func update(with cars: CarsScreen) {
+    func update(with cars: [Cars]) {
         mainView.update(with: cars)
     }
 }
