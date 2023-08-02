@@ -84,4 +84,8 @@ extension MainScreenCarsViewImp {
     func update(with cars: [Cars]) {
         dataSource?.update(with: cars)
     }
+    
+    func setCellAction(_ action: @escaping (String) -> Void?) {
+        delegateAdapter.setAction(action)
+    }
 }

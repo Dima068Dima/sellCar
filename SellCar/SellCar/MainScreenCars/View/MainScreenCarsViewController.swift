@@ -35,7 +35,9 @@ final class MainScreenCarsViewController: UIViewController {
     }
     
     private func setupActions() {
-       
+        mainView.setCellAction { [unowned self] eventId in
+            presenter.cellDidTap(with: eventId)
+        }
     }
 }
 
