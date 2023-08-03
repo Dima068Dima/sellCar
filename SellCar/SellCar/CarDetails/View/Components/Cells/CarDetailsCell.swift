@@ -28,12 +28,13 @@ final class CarDetailsCell: BaseCollectionCell {
     
     private func setupTitleLabel() {
         titleLabel.numberOfLines = 0
-        titleLabel.font = .systemFont(ofSize: 18.scaleIfNeeded())
+        titleLabel.textAlignment = .justified
+        titleLabel.font = .systemFont(ofSize: 16.scaleIfNeeded())
         
         contentView.addSubview(titleLabel)
         titleLabel.snp.makeConstraints {
-            $0.top.equalToSuperview().inset(5.scaleIfNeeded())
-            $0.left.equalToSuperview().offset(8.scaleIfNeeded())
+            $0.bottom.equalTo(imageView.snp.bottom).inset(50.scaleIfNeeded())
+            $0.left.right.equalToSuperview().offset(10.scaleIfNeeded())
             $0.height.equalTo(29.scaleIfNeeded())
         }
     }
@@ -42,7 +43,7 @@ final class CarDetailsCell: BaseCollectionCell {
 // MARK: - Public -
 extension CarDetailsCell {
     func update(with postCar: Post) {
-        titleLabel.text = postCar.text
+        titleLabel.text = postCar.publicationDate.toStringDate(elements: .day, .month, .year)
         guard let urlImage = URL(string: postCar.img) else { return }
         imageView.downloaded(from: urlImage)
     }

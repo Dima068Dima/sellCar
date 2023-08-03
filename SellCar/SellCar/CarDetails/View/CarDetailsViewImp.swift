@@ -34,7 +34,7 @@ final class CarDetailsViewImp: UIView {
             
             let itemSize = NSCollectionLayoutSize(
                 widthDimension: .fractionalWidth(1.0),
-                heightDimension: .absolute(320.scaleIfNeeded()))
+                heightDimension: .absolute(420.scaleIfNeeded()))
             let item = NSCollectionLayoutItem(layoutSize: itemSize)
             
             let groupSize = NSCollectionLayoutSize(
