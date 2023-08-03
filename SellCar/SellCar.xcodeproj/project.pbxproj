@@ -121,10 +121,10 @@
 		3559C4412A799B2E00582A5F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3559C4422A799C7A00582A5F /* Components */,
-				3559C4432A799CC600582A5F /* MainScreenCarsViewImp.swift */,
 				3559C4532A79A59500582A5F /* MainScreenCarsView.swift */,
+				3559C4432A799CC600582A5F /* MainScreenCarsViewImp.swift */,
 				3559C44C2A79A0E800582A5F /* MainScreenCarsViewController.swift */,
+				3559C4422A799C7A00582A5F /* Components */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -230,9 +230,9 @@
 		35918A7B2A797DF100310D71 /* SellCar */ = {
 			isa = PBXGroup;
 			children = (
+				3559C4402A79973800582A5F /* MainScreenCars */,
 				35B7F3692A7BD1850034E449 /* CarDetails */,
 				3559C4452A799DDC00582A5F /* Core */,
-				3559C4402A79973800582A5F /* MainScreenCars */,
 				35918A7C2A797DF100310D71 /* AppDelegate.swift */,
 				35918A7E2A797DF100310D71 /* SceneDelegate.swift */,
 				35918A802A797DF100310D71 /* ViewController.swift */,
@@ -255,13 +255,9 @@
 		35B7F3692A7BD1850034E449 /* CarDetails */ = {
 			isa = PBXGroup;
 			children = (
+				35B7F37C2A7C52870034E449 /* View */,
 				35B7F36F2A7BE82A0034E449 /* NetworkServices */,
 				35B7F36A2A7BDE6E0034E449 /* Presenter */,
-				35B7F3722A7BF27B0034E449 /* CarDetailsCell.swift */,
-				35B7F3742A7BF3780034E449 /* CarDetailAdapter.swift */,
-				35B7F3762A7BF6650034E449 /* CarDetailsViewController.swift */,
-				35B7F3782A7BF6CA0034E449 /* CarDetailsViewImp.swift */,
-				35B7F37A2A7BF76F0034E449 /* CarDetailsView.swift */,
 			);
 			path = CarDetails;
 			sourceTree = "<group>";
@@ -281,6 +277,42 @@
 				35B7F3702A7BE8630034E449 /* CarDetailsNetworkAPI.swift */,
 			);
 			path = NetworkServices;
+			sourceTree = "<group>";
+		};
+		35B7F37C2A7C52870034E449 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				35B7F37A2A7BF76F0034E449 /* CarDetailsView.swift */,
+				35B7F3782A7BF6CA0034E449 /* CarDetailsViewImp.swift */,
+				35B7F3762A7BF6650034E449 /* CarDetailsViewController.swift */,
+				35B7F37D2A7C52940034E449 /* Components */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		35B7F37D2A7C52940034E449 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				35B7F37F2A7C532B0034E449 /* Adapters */,
+				35B7F37E2A7C52A70034E449 /* Cells */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		35B7F37E2A7C52A70034E449 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				35B7F3722A7BF27B0034E449 /* CarDetailsCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		35B7F37F2A7C532B0034E449 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				35B7F3742A7BF3780034E449 /* CarDetailAdapter.swift */,
+			);
+			path = Adapters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
