@@ -9,5 +9,4 @@ import Foundation
 
 protocol MainScreenCarsPresenter: AnyObject {
     func loadCars()
-    func cellDidTap(with eventId: String)
 }

@@ -19,17 +19,13 @@ final class MainScreenCarsPresenterImp: MainScreenCarsPresenter {
                     view?.update(with: carsResponse)
                 }
             } catch {
-                
+                print(error)
             }
         }
     }
     
     func setView(view: MainScreenCarsView) {
         self.view = view
-    }
-    
-    func cellDidTap(with eventId: String) {
-        //
     }
 }
 
