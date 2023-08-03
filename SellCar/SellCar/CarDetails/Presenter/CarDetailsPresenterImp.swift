@@ -14,8 +14,8 @@ final class CarDetailsPresenterImp: CarDetailsPresenter {
 // MARK: - View Model -
 
 struct CarDetailsModel: Decodable {
-    let cars: Car
-    let ownerDetails: OwnerDetails
+    let car: Car
+    let user: OwnerDetails
 }
 
 struct Car: Decodable {
