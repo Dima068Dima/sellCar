@@ -13,7 +13,7 @@ final class CarDetailsCell: BaseCollectionCell {
     private let imageView = UIImageView()
     
     override func setupUI() {
-        self.backgroundColor = .lightGray
+        self.backgroundColor = .systemGray6
         setupImageView()
         setupTitleLabel()
     }
