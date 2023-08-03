@@ -1,20 +1,20 @@
 //
-//  MainScreenNetworkAPI.swift
+//  CarDetailsNetworkAPI.swift
 //  SellCar
 //
-//  Created by Дмитрий Татаринцев on 02.08.2023.
+//  Created by Дмитрий Татаринцев on 03.08.2023.
 //
 
 import Foundation
 import Alamofire
 
-final class MainScreenNetworkAPI {
+final class CarDetailsNetworkAPI {
     private let header = HTTPHeader(
-        name: "Load Main Scren",
+        name: "Load Car Details",
         value: "Bearer 787071117870711178707111307b63465677870787071111c6df96e084d083a36e52fc5")
     
-    func getCars() async throws -> [Cars] {
-        let url = "http://am111.05.testing.place/api/v1/cars/list"
+    func getReward(with carId: String) async throws -> CarDetailsModel {
+        let url = "http://am111.05.testing.place/api/v1/car/\(carId)"
         
         return try await AF.request(
             url,
@@ -22,7 +22,7 @@ final class MainScreenNetworkAPI {
             headers: [header]
         )
         .validate(statusCode: [200])
-        .serializingDecodable([Cars].self)
+        .serializingDecodable(CarDetailsModel.self)
         .value
     }
 }
