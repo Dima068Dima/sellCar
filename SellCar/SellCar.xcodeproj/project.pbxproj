@@ -29,6 +29,7 @@
 		35B7F3632A7AFC080034E449 /* MainScreenCarsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B7F3622A7AFC080034E449 /* MainScreenCarsRouter.swift */; };
 		35B7F3662A7AFC600034E449 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B7F3652A7AFC600034E449 /* Router.swift */; };
 		35B7F3682A7AFCAB0034E449 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B7F3672A7AFCAB0034E449 /* Routable.swift */; };
+		35B7F36C2A7BDF1C0034E449 /* CarDetailsPresenterImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B7F36B2A7BDF1C0034E449 /* CarDetailsPresenterImp.swift */; };
 		94FB71139A69D36C5068C023 /* Pods_SellCar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14BBB603F0A7BB7AEA8C7A53 /* Pods_SellCar.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		35B7F3622A7AFC080034E449 /* MainScreenCarsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenCarsRouter.swift; sourceTree = "<group>"; };
 		35B7F3652A7AFC600034E449 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		35B7F3672A7AFCAB0034E449 /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
+		35B7F36B2A7BDF1C0034E449 /* CarDetailsPresenterImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsPresenterImp.swift; sourceTree = "<group>"; };
 		C24424D46E78B18128DF8C9E /* Pods-SellCar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SellCar.release.xcconfig"; path = "Target Support Files/Pods-SellCar/Pods-SellCar.release.xcconfig"; sourceTree = "<group>"; };
 		CCF956B2F582D75EB39C2A1B /* Pods-SellCar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SellCar.debug.xcconfig"; path = "Target Support Files/Pods-SellCar/Pods-SellCar.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -214,6 +216,7 @@
 		35918A7B2A797DF100310D71 /* SellCar */ = {
 			isa = PBXGroup;
 			children = (
+				35B7F3692A7BD1850034E449 /* CarDetails */,
 				3559C4452A799DDC00582A5F /* Core */,
 				3559C4402A79973800582A5F /* MainScreenCars */,
 				35918A7C2A797DF100310D71 /* AppDelegate.swift */,
@@ -233,6 +236,22 @@
 				35B7F3672A7AFCAB0034E449 /* Routable.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		35B7F3692A7BD1850034E449 /* CarDetails */ = {
+			isa = PBXGroup;
+			children = (
+				35B7F36A2A7BDE6E0034E449 /* Presenter */,
+			);
+			path = CarDetails;
+			sourceTree = "<group>";
+		};
+		35B7F36A2A7BDE6E0034E449 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				35B7F36B2A7BDF1C0034E449 /* CarDetailsPresenterImp.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,6 +382,7 @@
 				35918A7F2A797DF100310D71 /* SceneDelegate.swift in Sources */,
 				3559C4572A79AD2700582A5F /* MainScreenCarsDataSourceAdapter.swift in Sources */,
 				3559C4502A79A1F000582A5F /* MainScreenCarsPresenter.swift in Sources */,
+				35B7F36C2A7BDF1C0034E449 /* CarDetailsPresenterImp.swift in Sources */,
 				3559C45A2A79AE5900582A5F /* MainScreenCarsCell.swift in Sources */,
 				3559C45D2A79AEAA00582A5F /* BaseCollectionCell.swift in Sources */,
 				3559C44B2A799F0100582A5F /* Int+.swift in Sources */,
