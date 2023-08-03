@@ -83,6 +83,7 @@ extension CarDetailsModel: Hashable {
 
 struct Welcome: Codable {
     let posts: [Post]
+    let user: User
 }
 
 // MARK: - Post
@@ -92,17 +93,38 @@ struct Post: Codable {
     let id: Int
     let text: String
     let likeCount: Int
-    let createdAt: String
+    let publicationDate: String
     let commentCount: Int
     let img: String
     
     enum CodingKeys: String, CodingKey {
         case id, text
         case likeCount = "like_count"
-        case createdAt = "created_at"
+        case publicationDate = "created_at"
         case commentCount = "comment_count"
         case img
     }
+}
+
+// MARK: - User
+struct User: Codable {
+    let id: Int
+    let username: String
+    let avatar: AvatarModel
+    let autoCount: Int
+    let mainAutoName: String
+
+    enum CodingKeys: String, CodingKey {
+        case id, username, avatar
+        case autoCount = "auto_count"
+        case mainAutoName = "main_auto_name"
+    }
+}
+
+// MARK: - Avatar
+struct AvatarModel: Codable {
+    let path: String
+    let url: String
 }
 
 extension Post: Hashable {
