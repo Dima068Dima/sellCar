@@ -44,7 +44,7 @@ final class CarDetailsCell: BaseCollectionCell {
 extension CarDetailsCell {
     func update(with postCar: Post) {
         titleLabel.text = postCar.publicationDate.toStringDate(elements: .day, .month, .year)
-        guard let urlImage = URL(string: postCar.img) else { return }
+        guard let urlImage = URL(string: postCar.img ?? "") else { return }
         imageView.downloaded(from: urlImage)
     }
 }

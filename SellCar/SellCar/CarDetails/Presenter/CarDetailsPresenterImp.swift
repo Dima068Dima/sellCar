@@ -95,7 +95,7 @@ struct Post: Codable {
     let likeCount: Int
     let publicationDate: String
     let commentCount: Int
-    let img: String
+    let img: String?
     
     enum CodingKeys: String, CodingKey {
         case id, text
