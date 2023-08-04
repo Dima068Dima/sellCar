@@ -81,7 +81,7 @@ extension CarDetailsModel: Hashable {
 
 // MARK: - View Model To Get Posts -
 
-struct Welcome: Codable {
+struct PostsСar: Codable {
     let posts: [Post]
     let user: User
 }

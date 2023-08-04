@@ -8,5 +8,5 @@
 import Foundation
 
 protocol CarDetailsView: AnyObject {
-    func update(with postCar: Welcome)
+    func update(with postCar: PostsСar)
 }

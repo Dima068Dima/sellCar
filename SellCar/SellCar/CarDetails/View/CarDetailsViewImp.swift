@@ -78,7 +78,7 @@ final class CarDetailsViewImp: UIView {
 
 // MARK: - Public -
 extension CarDetailsViewImp {
-    func update(with postCar: Welcome) {
+    func update(with postCar: PostsСar) {
         dataSource?.update(with: postCar.posts)
     }
 }

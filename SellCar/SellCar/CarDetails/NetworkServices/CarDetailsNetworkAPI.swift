@@ -22,7 +22,7 @@ final class CarDetailsNetworkAPI {
         .value
     }
     
-    func getPostCar(with carId: String) async throws -> Welcome {
+    func getPostCar(with carId: String) async throws -> PostsСar {
         let url = "http://am111.05.testing.place/api/v1/car/\(carId)/posts"
         
         return try await AF.request(
@@ -31,7 +31,7 @@ final class CarDetailsNetworkAPI {
             headers: [:]
         )
         .validate(statusCode: [200])
-        .serializingDecodable(Welcome.self)
+        .serializingDecodable(PostsСar.self)
         .value
     }
 }
