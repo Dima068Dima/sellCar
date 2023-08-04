@@ -10,9 +10,9 @@ import Foundation
 import UIKit
 
 final class CarDetailAdapter: NSObject {
-    private typealias CarDetailDataSource = UICollectionViewDiffableDataSource<Section<New, OwnerDetails>, Post>
+    private typealias CarDetailDataSource = UICollectionViewDiffableDataSource<Section<SectionType, OwnerDetails>, Post>
     
-    private var snapshot: NSDiffableDataSourceSnapshot<Section<New, OwnerDetails>, Post>?
+    private var snapshot: NSDiffableDataSourceSnapshot<Section<SectionType, OwnerDetails>, Post>?
     private let collectionView: UICollectionView
     private var dataSource: CarDetailDataSource?
     
@@ -24,8 +24,8 @@ final class CarDetailAdapter: NSObject {
     }
     
     func update(with newsPost: [Post], at user: OwnerDetails) {
-        let section = [Section(headerItem: New.main, items: user)]
-        self.snapshot = NSDiffableDataSourceSnapshot<Section<New, OwnerDetails>, Post>()
+        let section = [Section(headerItem: SectionType.main, items: user)]
+        self.snapshot = NSDiffableDataSourceSnapshot<Section<SectionType, OwnerDetails>, Post>()
         snapshot?.deleteAllItems()
         snapshot?.appendSections(section)
         snapshot?.appendItems(newsPost, toSection: section.first!)
@@ -77,7 +77,7 @@ final class CarDetailAdapter: NSObject {
 }
 
 extension CarDetailAdapter {
-    enum New: Hashable {
+    enum SectionType: Hashable {
         case main
     }
     
