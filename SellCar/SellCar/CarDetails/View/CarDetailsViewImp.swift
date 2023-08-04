@@ -44,6 +44,14 @@ final class CarDetailsViewImp: UIView {
             
             let section = NSCollectionLayoutSection(group: group)
             section.interGroupSpacing = 16.scaleIfNeeded()
+            
+            let headerFooterSize = NSCollectionLayoutSize(
+                widthDimension: .fractionalWidth(1.0),
+                heightDimension: .estimated(.pi))
+            let sectionHeader = NSCollectionLayoutBoundarySupplementaryItem(
+                layoutSize: headerFooterSize,
+                elementKind: UICollectionView.elementKindSectionHeader, alignment: .top)
+            section.boundarySupplementaryItems = [sectionHeader]
 
             section.contentInsets = .init(
                 top: 16.scaleIfNeeded(),
@@ -62,8 +70,15 @@ final class CarDetailsViewImp: UIView {
     }
 
     private func setupCollectionView() {
-        collectionView.register(CarDetailsCell.self,
-                                forCellWithReuseIdentifier: CarDetailsCell.identifier)
+        collectionView.register(
+            CarDetailsHeader.self,
+            forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
+            withReuseIdentifier: CarDetailsHeader.identifier
+        )
+        collectionView.register(
+            CarDetailsCell.self,
+            forCellWithReuseIdentifier: CarDetailsCell.identifier
+        )
         collectionView.showsVerticalScrollIndicator = false
         collectionView.showsHorizontalScrollIndicator = false
 
@@ -78,7 +93,7 @@ final class CarDetailsViewImp: UIView {
 
 // MARK: - Public -
 extension CarDetailsViewImp {
-    func update(with postCar: PostsСar) {
-        dataSource?.update(with: postCar.posts)
+    func update(with postCar: PostsСar, infoUser: CarDetailsModel) {
+        dataSource?.update(with: postCar.posts, at: infoUser.user)
     }
 }

@@ -36,7 +36,7 @@ final class CarDetailsViewController: UIViewController {
 }
 
 extension CarDetailsViewController: CarDetailsView {
-    func update(with postCar: PostsСar) {
-        mainView.update(with: postCar)
+    func update(with postCar: PostsСar, infoUser: CarDetailsModel) {
+        mainView.update(with: postCar, infoUser: infoUser)
     }
 }

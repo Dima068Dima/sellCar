@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 
 final class CarDetailsNetworkAPI {
-    func getReward(with carId: String) async throws -> CarDetailsModel {
+    func getOwnerInfo(with carId: String) async throws -> CarDetailsModel {
         let url = "http://am111.05.testing.place/api/v1/car/\(carId)"
         
         return try await AF.request(

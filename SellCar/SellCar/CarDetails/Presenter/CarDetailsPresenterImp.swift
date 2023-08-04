@@ -20,8 +20,9 @@ final class CarDetailsPresenterImp: CarDetailsPresenter {
         Task {
             do {
                 let carPostResponse = try await carDetailsNetworkAPI.getPostCar(with: carId)
+                let infoUserResponse = try await carDetailsNetworkAPI.getOwnerInfo(with: carId)
                 await MainActor.run {
-                    view?.update(with: carPostResponse)
+                    view?.update(with: carPostResponse, infoUser: infoUserResponse)
                 }
             } catch {
                 print(error)
@@ -34,11 +35,9 @@ final class CarDetailsPresenterImp: CarDetailsPresenter {
     }
 }
 
-// MARK: - View Model -
+// MARK: - View Model To Owner Info-
 
 struct CarDetailsModel: Decodable {
-    var uuid = UUID()
-    
     let car: Car
     let user: OwnerDetails
 }
@@ -57,13 +56,13 @@ struct Car: Decodable, Hashable {
 
 struct OwnerDetails: Decodable, Hashable {
     let id: Int
-    let username, email, about: String
+    let username, email: String
     let avatar: Avatar
     let autoCount: Int
     let mainAutoName: String
     
     enum CodingKeys: String, CodingKey {
-        case id, username, email, about, avatar
+        case id, username, email, avatar
         case autoCount = "auto_count"
         case mainAutoName = "main_auto_name"
     }
@@ -71,12 +70,6 @@ struct OwnerDetails: Decodable, Hashable {
 
 struct Avatar: Decodable, Hashable {
     let url: String
-}
-
-extension CarDetailsModel: Hashable {
-    static func == (lhs: CarDetailsModel, rhs: CarDetailsModel) -> Bool {
-        lhs.uuid == rhs.uuid
-    }
 }
 
 // MARK: - View Model To Get Posts -
@@ -107,7 +100,7 @@ struct Post: Codable {
 }
 
 // MARK: - User
-struct User: Codable {
+struct User: Codable, Hashable {
     let id: Int
     let username: String
     let avatar: AvatarModel
@@ -122,7 +115,7 @@ struct User: Codable {
 }
 
 // MARK: - Avatar
-struct AvatarModel: Codable {
+struct AvatarModel: Codable, Hashable {
     let path: String
     let url: String
 }
