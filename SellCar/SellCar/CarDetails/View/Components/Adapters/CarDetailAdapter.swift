@@ -70,6 +70,7 @@ final class CarDetailAdapter: NSObject {
             }
             
             header.update(with:section.items)
+            header.layer.cornerRadius = 8
             return header
         }
     }

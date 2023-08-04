@@ -34,7 +34,7 @@ final class CarDetailsViewImp: UIView {
             
             let itemSize = NSCollectionLayoutSize(
                 widthDimension: .fractionalWidth(1.0),
-                heightDimension: .absolute(420.scaleIfNeeded()))
+                heightDimension: .absolute(380.scaleIfNeeded()))
             let item = NSCollectionLayoutItem(layoutSize: itemSize)
             
             let groupSize = NSCollectionLayoutSize(
@@ -47,7 +47,7 @@ final class CarDetailsViewImp: UIView {
             
             let headerFooterSize = NSCollectionLayoutSize(
                 widthDimension: .fractionalWidth(1.0),
-                heightDimension: .estimated(.pi))
+                heightDimension: .absolute(120.scaleIfNeeded()))
             let sectionHeader = NSCollectionLayoutBoundarySupplementaryItem(
                 layoutSize: headerFooterSize,
                 elementKind: UICollectionView.elementKindSectionHeader, alignment: .top)
