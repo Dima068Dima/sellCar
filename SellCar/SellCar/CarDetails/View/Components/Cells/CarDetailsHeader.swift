@@ -36,7 +36,12 @@ final class CarDetailsHeader: UICollectionReusableView {
     }
     
     private func setupOwnerPicture() {
-        
+        ownerPicture.contentMode = .scaleAspectFit
+        ownerPicture.layer.borderWidth = 1
+        ownerPicture.layer.masksToBounds = true
+        ownerPicture.layer.borderColor = UIColor.systemGray5.cgColor
+        ownerPicture.layer.cornerRadius = self.frame.height / 3
+        ownerPicture.clipsToBounds = true
         addSubview(ownerPicture)
         ownerPicture.snp.makeConstraints {
             $0.top.equalToSuperview().inset(10)

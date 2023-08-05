@@ -49,7 +49,7 @@ final class CarDetailsCell: BaseCollectionCell {
     private func setupTitleLabel() {
         titleLabel.numberOfLines = 0
         titleLabel.textAlignment = .justified
-        titleLabel.font = .systemFont(ofSize: 16.scaleIfNeeded())
+        titleLabel.font = .systemFont(ofSize: 18.scaleIfNeeded())
         
         postInfo.addArrangedSubview(titleLabel)
     }
